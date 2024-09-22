@@ -21,7 +21,7 @@ export default function Component() {
     <div className="min-h-screen bg-black text-white">
       <header className="p-4 md:p-6">
         <nav className="container mx-auto flex justify-between items-center">
-          <a href="#" className="text-2xl font-bold">JD</a>
+          <a href="#" className="text-2xl font-bold">Franco Ruffin</a>
           <div className="hidden md:flex space-x-4">
             <a href="#about" className="hover:text-gray-300">{t.about}</a>
             <a href="#projects" className="hover:text-gray-300">{t.projects}</a>
