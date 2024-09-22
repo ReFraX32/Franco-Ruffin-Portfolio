@@ -14,7 +14,7 @@ export default function Component() {
 
   const projects = [
     { title: t.project1Title, desc: t.project1Desc, href: "https://github.com/ReFraX32/Trabajo-Final-Web-Junior-Achievement", img: image1 },
-    { title: t.project2Title, desc: t.project2Desc, href: "https://github.com/your-username/project2" },
+    { title: t.project2Title, desc: t.project2Desc, href: "https://github.com/ReFraX32/Franco-Ruffin-Portfolio" },
   ];
 
   return (
