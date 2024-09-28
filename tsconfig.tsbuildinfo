@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/customnextarrow.tsx","./src/customprevarrow.tsx","./src/imagesimports.tsx","./src/images.d.ts","./src/main.tsx","./src/react-app-env.d.ts","./src/react-slick.d.ts","./src/translations.tsx","./src/vite-env.d.ts"],"version":"5.6.2"}
+{"root":["./vite.config.ts","./src/app.tsx","./src/customnextarrow.tsx","./src/customprevarrow.tsx","./src/imagesimports.tsx","./src/images.d.ts","./src/main.tsx","./src/react-app-env.d.ts","./src/react-slick.d.ts","./src/translations.tsx","./src/vite-env.d.ts"],"version":"5.6.2"}
