@@ -7,6 +7,13 @@ import './index.css';
 import CustomPrevArrow from './CustomPrevArrow';
 import CustomNextArrow from './CustomNextArrow';
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+    }
+  }
+}
+
 export default function Component() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [language, setLanguage] = useState('en')
