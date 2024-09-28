@@ -31,5 +31,11 @@
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
+  },
+  
+  "scripts": {
+    "build": "npm run build-ts && vite build",
+    "build-ts": "npx tsc -b"
   }
+  
 }
