@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "npx --package typescript tsc -b && vite build",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "build-ts": "npx --package typescript tsc -b",
-  "postinstall": "npm install typescript"
+    "dev": "vite",
+    "build": "npx --package typescript tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "build-ts": "npx --package typescript tsc -b",
+    "postinstall": "npm install typescript"
   },
   "dependencies": {
     "lucide-react": "^0.439.0",
@@ -34,5 +34,4 @@
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
   }
-  
 }
