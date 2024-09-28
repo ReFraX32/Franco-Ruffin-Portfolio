@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build-ts": "npx tsc -b"
+    "build-ts": "npx tsc -b",
+    "postinstall": "npm install typescript"
   },
   "dependencies": {
     "lucide-react": "^0.439.0",
