@@ -1,0 +1,32 @@
+declare const projectsImages: {
+    project1Image: any;
+    project2Image: any;
+    project3Image: any;
+};
+declare const certificationsImages: {
+    certification1Image: any;
+    certification2Image: any;
+    certification3Image: any;
+    certification4Image: any;
+    certification5Image: any;
+    certification6Image: any;
+    certification7Image: any;
+    certification8Image: any;
+    certification9Image: any;
+    certification10Image: any;
+    certification11Image: any;
+    certification12Image: any;
+    certification13Image: any;
+    certification14Image: any;
+    certification15Image: any;
+    certification16Image: any;
+    certification17Image: any;
+    certification18Image: any;
+    certification19Image: any;
+    certification20Image: any;
+    certification21Image: any;
+    certification22Image: any;
+    certification23Image: any;
+    certification24Image: any;
+};
+export { projectsImages, certificationsImages };
