@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx --package typescript tsc -b --skipLibCheck --noEmit && vite build",
+    "build": "npx --package typescript tsc -b --noEmit && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build-ts": "npx --package typescript tsc -b",
+    "build-ts": "npx --package typescript tsc --skipLibCheck --noEmit -b",
     "postinstall": "npm install typescript"
   },
   "dependencies": {
