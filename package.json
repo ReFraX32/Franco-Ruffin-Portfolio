@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-  "dev": "vite",
-  "build": "npx tsc -b --skipLibCheck --noEmit && vite build",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "build-ts": "npx tsc -b",
-  "postinstall": "npm install typescript"
-},
+    "dev": "vite",
+    "build": "npx --package typescript tsc -b --skipLibCheck --noEmit && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "build-ts": "npx --package typescript tsc -b",
+    "postinstall": "npm install typescript"
+  },
   "dependencies": {
     "lucide-react": "^0.439.0",
     "react": "^18.3.1",
