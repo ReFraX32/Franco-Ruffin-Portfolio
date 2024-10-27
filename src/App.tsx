@@ -1,4 +1,3 @@
-// @ts-nocheck
 import { useState, useEffect } from 'react'
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react'
 import translations from './translations'
@@ -80,7 +79,7 @@ export default function Component() {
     { title: t.education2Title, desc: t.education2Desc },
   ];
 
-  // Settings for the carousel
+
   const settingsProjects = {
     dots: true,
     infinite: true,
@@ -91,7 +90,7 @@ export default function Component() {
     autoplaySpeed: 3000,
     nextArrow: <CustomNextArrow onClick={() => {}} />,
     prevArrow: <CustomPrevArrow onClick={() => {}} />,
-    responsive: [ // Responsive settings
+    responsive: [
       {
         breakpoint: 768,
         settings: {
@@ -112,7 +111,7 @@ export default function Component() {
     autoplaySpeed: 3000,
     nextArrow: <CustomNextArrow onClick={() => {}} />,
     prevArrow: <CustomPrevArrow onClick={() => {}} />,
-    responsive: [ // Responsive settings
+    responsive: [
       {
         breakpoint: 768,
         settings: {
@@ -127,7 +126,7 @@ export default function Component() {
     e.preventDefault();
     const targetId = e.currentTarget.getAttribute('href');
 
-    if (targetId) { // Check if targetId is not null
+    if (targetId) {
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
@@ -276,7 +275,7 @@ export default function Component() {
             <a href="https://github.com/ReFraX32?tab=overview&from=2024-09-01&to=2024-09-01" className="hover:text-gray-300 flex items-center">
               <p className="mr-2">GitHub</p><Github />
             </a>
-            <a href="https://www.linkedin.com/in/franco-ruffin-berriel-040b70249/" className="hover:text-gray-300 flex items-center">
+            <a href="https://www.linkedin.com/in/franco-ruffin-040b70249/" className="hover:text-gray-300 flex items-center">
               <p className="mr-2">Linkedin</p><Linkedin />
             </a>
             <div className="hover:text-gray-300 flex items-center">
