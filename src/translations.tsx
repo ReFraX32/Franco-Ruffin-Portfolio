@@ -5,25 +5,40 @@ const translations = {
       contact: "Contact",
       aboutMe: "About Me",
       aboutMeText: "Tertiary technical education student with solid knowledge in software development, seeking job opportunities. I stand out for my ability to adapt to the needs of the company and my focus on providing efficient and effective solutions. I am committed to continuous learning and constant improvement, which allows me to face challenges and contribute to the success of the projects I participate in.",
+
       projectsTitle: "Projects",
-      project3Title: "My first webpage",
-      project3Desc: "Webpage created with HTML, CSS, JavaScript and Bootstrap with Pokémon theme",
-      project2Title: "Portfolio (This page)",
       project1Title: "Balance and Inventory Manager App",
-      project2Desc: "Portfolio created with React, Vite.js, Typescript and TailwindCSS",
+      project2Title: "Portfolio (This page)",
+      project3Title: "My first webpage",
+      project4Title: "Black Ops 2 Multi-Perks",
+      project5Title: "Auto-Clicker and Key-Presser",
+      project6Title: "Python GUI Calculator",
+      project7Title: "Bird Flappy",
+      project8Title: "Dual Wield Skill",
+
       project1Desc: "Inventory and Balance Manager App created with Javascript, React Native and Expo",
+      project2Desc: "Portfolio created with React, Vite.js, Typescript and TailwindCSS",
+      project3Desc: "Webpage created with HTML, CSS, JavaScript and Bootstrap with Pokémon theme",
+      project4Desc: "Mod created for Call of Duty: Black Ops 2 developed in GSC (Language similar to C++)",
+      project5Desc: "Auto-Clicker created with Java, Swing and JNativeHook",
+      project6Desc: "Calculator with GUI developed in Python with Tkinter",
+      project7Desc: "Game inspired by Flappy Bird created with Unity and C#",
+      project8Desc: "Mod developed in Unity with C# created for a game called Ultrakill",
+
       viewProject: "Repository",
       contactTitle: "Contact",
       contactText: "Feel free to reach out to me for work or collaborations!",
       github: "Github",
-      footer: "© 2024 Franco Ruffin. All rights reserved.",
+      footer: "© 2024 Franco Ramon Ruffin Berriel. All rights reserved.",
+
       experienceTitle: "Professional Experience",
       experience1Title: "Freelance Systems Technician (June 2021 - Present)",
-      experience1Desc: "Since a very young age, I have been providing services for the installation and repair of operating systems and applications independently, as well as hardware selection and computer assembly services.",
       experience2Title: "Web Developer in Junior Achievement (June 2022 - July 2022)",
-      experience2Desc: "At Junior Achievement, I was trained to develop web pages using HTML, CSS, JavaScript, and Bootstrap. Later, I participated in a group final project where we applied all the knowledge we had learned.",
-      skillsTitle: "Skills",
 
+      experience1Desc: "Since a very young age, I have been providing services for the installation and repair of operating systems and applications independently, as well as hardware selection and computer assembly services.",
+      experience2Desc: "At Junior Achievement, I was trained to develop web pages using HTML, CSS, JavaScript, and Bootstrap. Later, I participated in a group final project where we applied all the knowledge we had learned.",
+
+      skillsTitle: "Skills",
       skillsDesc: `Angular
       Azure Cloud
       C
@@ -54,7 +69,7 @@ const translations = {
       Typescript
       Unity
       WordPress`,
-      
+
       certificationsTitle: "Certifications",
       certification1Title: "React.js, Vite.js and TailwindCSS",
       certification2Title: "Typescript",
@@ -80,14 +95,18 @@ const translations = {
       certification22Title: "Terminal and CLI",
       certification23Title: "Unity",
       certification24Title: "WordPress",
+      certification25Title: "Flutter",
+      certification26Title: "Responsive Web Design",
 
       educationTitle: "Education",
       education1Title: "I.S.F.T. N°179 Dr. Carlos Pellegrini (March 2024 - December 2026)",
-      education1Desc: "Technical Degree, Computer Systems Analysis. First year of the degree in progress.",
       education2Title: "Universidad Tecnológica Nacional (UTN) (December 2022 - December 2023)",
+
+      education1Desc: "Technical Degree, Computer Systems Analysis. Second year of the degree in progress.",
       education2Desc: "Engineering, Computer Systems Analysis. First year of the degree completed.",
+
       aptitudesTitle: "Aptitudes",
-      aptitudesDesc: `Continuous willingness to learn new things.\nProactivity.\nSelf-taught.\nAdaptability.`
+      aptitudesDesc: "Continuous willingness to learn new things.\nProactivity.\nSelf-taught.\nAdaptability."
     },
     es: {
       about: "Acerca de",
@@ -95,25 +114,40 @@ const translations = {
       contact: "Contacto",
       aboutMe: "Sobre Mí",
       aboutMeText: "Estudiante de educación técnica superior terciaria con sólidos conocimientos en desarrollo de software, en busca de propuestas laborales. Me destaco por mi capacidad de adaptarme a las necesidades de la empresa y por mi enfoque en brindar soluciones eficientes y efectivas. Estoy comprometido con el aprendizaje continuo y la mejora constante, lo que me permite enfrentar desafíos y contribuir al éxito de los proyectos en los que participo.",
+
       projectsTitle: "Proyectos",
-      project3Title: "Mi primera página web",
-      project3Desc: "Pagina web creada con HTML, CSS, JavaScript y Bootstrap con tematica de pokémon",
-      project2Title: "Portafolio (Esta página)",
       project1Title: "Aplicación de gestión de inventario y balance",
-      project2Desc: "Portfolio creado con React, Vite.js, Typescript y TailwindCSS",
+      project2Title: "Portafolio (Esta página)",
+      project3Title: "Mi primera página web",
+      project4Title: "Black Ops 2 Multi-Perks",
+      project5Title: "Auto-Clicker and Key-Presser",
+      project6Title: "Python GUI Calculator",
+      project7Title: "Bird Flappy",
+      project8Title: "Dual Wield Skill",
+
       project1Desc: "Aplicación de gestión de balance e inventario creada con Javascript, React Native y Expo",
+      project2Desc: "Portfolio creado con React, Vite.js, Typescript y TailwindCSS",
+      project3Desc: "Pagina web creada con HTML, CSS, JavaScript y Bootstrap con tematica de pokémon",
+      project4Desc: "Mod creado para Call of Duty:Black Ops 2 desarrollado en GSC (Lenguaje similar a C++)",
+      project5Desc: "Auto-Clicker creado con Java, Swing y JNativeHook",
+      project6Desc: "Calculadora con GUI desarrollada en Python con Tkinter",
+      project7Desc: "Juego inspirado en flappy bird creado con Unity y C#",
+      project8Desc: "Mod desarrollado en Unity con C# para un juego llamado Ultrakill",
+
       viewProject: "Repositorio",
       contactTitle: "Contacto",
       contactText: "¡No dudes en contactarme por trabajo o colaboraciones!",
       github: "Github",
-      footer: "© 2024 Franco Ruffin. Todos los derechos reservados.",
+      footer: "© 2024 Franco Ramon Ruffin Berriel. Todos los derechos reservados.",
+
       experienceTitle: "Experiencia Laboral",
       experience1Title: "Técnico de Sistemas Autónomo (Junio 2021 - Actualidad)",
-      experience1Desc: "Desde muy jóven he estado realizado servicios de instalación y reparación de sistemas operativos y aplicaciones de forma autónoma, asi como servicios de selección de hardware y armado de computadoras.",
       experience2Title: "Desarrollador Web en Junior Achievement (Junio 2022 - Julio 2022)",
-      experience2Desc: "En Junior Achievement fuí capacitado para desarrollar páginas web con HTML, CSS, Javascript y Bootstrap para posteriormente realizar un trabajo final grupal aplicando todos los conocimientos aprendidos.",
-      skillsTitle: "Habilidades",
 
+      experience1Desc: "Desde muy jóven he estado realizado servicios de instalación y reparación de sistemas operativos y aplicaciones de forma autónoma, asi como servicios de selección de hardware y armado de computadoras.",
+      experience2Desc: "En Junior Achievement fuí capacitado para desarrollar páginas web con HTML, CSS, Javascript y Bootstrap para posteriormente realizar un trabajo final grupal aplicando todos los conocimientos aprendidos.",
+
+      skillsTitle: "Habilidades",
       skillsDesc: `Angular
       Azure Cloud
       C
@@ -170,12 +204,16 @@ const translations = {
       certification22Title: "Terminal y CLI",
       certification23Title: "Unity",
       certification24Title: "WordPress",
+      certification25Title: "Flutter",
+      certification26Title: "Responsive Web Design",
       
       educationTitle: "Educación",
       education1Title: "I.S.F.T. N°179 Dr. Carlos Pellegrini (Marzo 2024 - Diciembre 2026)",
-      education1Desc: "Tecnicatura, Análisis de sistemas informáticos. Primer año de la carrera en proceso.",
       education2Title: "Universidad Tecnológica Nacional (UTN) (Deciembre 2022 - Diciembre 2023)",
+
+      education1Desc: "Tecnicatura, Análisis de sistemas informáticos. Segundo año de la carrera en proceso.",
       education2Desc: "Ingeniería, Análisis de sistemas informáticos. Primer año de la carrera realizado.",
+
       aptitudesTitle: "Aptitudes",
       aptitudesDesc: "Disposición continua a aprender algo nuevo.\nProactividad.\nAutodidacta.\nAdaptabilidad. "
     }

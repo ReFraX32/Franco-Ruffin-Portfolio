@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "franco-ramon-ruffin-berriel-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -30,7 +30,7 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.45",
     "tailwindcss": "^3.4.11",
-    "typescript": "^5.6.2",
+    "typescript": "^5.7.2",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
   }

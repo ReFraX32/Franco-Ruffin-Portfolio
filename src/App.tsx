@@ -12,9 +12,29 @@ export default function Component() {
   const [language, setLanguage] = useState('en')
   const [showHeader, setShowHeader] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem('language');
+    if (storedLanguage) {
+      setLanguage(storedLanguage);
+    } else {
+      const browserLanguage = navigator.language;
+      if (browserLanguage.includes('es')) {
+        setLanguage('es');
+      } else {
+        setLanguage('en');
+      }
+    }
+    setLoading(false);
+  }, []);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
-  const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => setLanguage(e.target.value)
+  const changeLanguage = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const selectedLanguage = e.target.value;
+    setLanguage(selectedLanguage);
+    localStorage.setItem('language', selectedLanguage);
+  };
 
   const t = translations[language as keyof typeof translations]
 
@@ -38,13 +58,20 @@ export default function Component() {
 
   const projects = [
     { title: t.project1Title, desc: t.project1Desc, href: "https://github.com/ReFraX32/-Balance-and-Inventory-Manager", img: projectsImages.project1Image },
-    { title: t.project2Title, desc: t.project2Desc, href: "https://github.com/ReFraX32/Franco-Ruffin-Portfolio", img: projectsImages.project2Image },
+    { title: t.project5Title, desc: t.project5Desc, href: "https://github.com/ReFraX32/Auto-Clicker-and-Key-Presser", img: projectsImages.project5Image },
+    { title: t.project7Title, desc: t.project7Desc, href: "https://github.com/ReFraX32/Bird-Flappy", img: projectsImages.project7Image },
+    { title: t.project6Title, desc: t.project6Desc, href: "https://github.com/ReFraX32/Simple-GUI-Python-Calculator", img: projectsImages.project6Image },
+    { title: t.project4Title, desc: t.project4Desc, href: "https://github.com/ReFraX32/BO2-Zombies-Multi-Perks", img: projectsImages.project4Image },
     { title: t.project3Title, desc: t.project3Desc, href: "https://github.com/ReFraX32/Trabajo-Final-Web-Junior-Achievement", img: projectsImages.project3Image },
+    { title: t.project2Title, desc: t.project2Desc, href: "https://github.com/ReFraX32/Franco-Ruffin-Portfolio", img: projectsImages.project2Image },
+    { title: t.project8Title, desc: t.project8Desc, href: "https://github.com/ReFraX32/Ultrakill-Dual-Wield-Skill-Mod", img: projectsImages.project8Image },
   ];
 
   const certifications = [
     { title: t.certification1Title, img: certificationsImages.certification1Image },
     { title: t.certification2Title, img: certificationsImages.certification2Image },
+    { title: t.certification26Title, img: certificationsImages.certification26Image },
+    { title: t.certification25Title, img: certificationsImages.certification25Image },
     { title: t.certification3Title, img: certificationsImages.certification3Image },
     { title: t.certification4Title, img: certificationsImages.certification4Image },
     { title: t.certification5Title, img: certificationsImages.certification5Image },
@@ -135,6 +162,10 @@ export default function Component() {
     }
   };
 
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="relative min-h-screen text-white">
       <div className="background"></div>
@@ -199,7 +230,7 @@ export default function Component() {
                 <p className="text-gray-400 mb-4">{project.desc}</p>
                 <a href={project.href} className="text-blue-400 hover:underline">{t.viewProject}</a>
                 {project.img && (
-                  <img src={project.img} alt={project.title} className="w-full h-auto mt-4 rounded-lg" />
+                  <img src={project.img} alt={project.title} className="project-image" />
                 )}
               </div>
             ))}
@@ -272,10 +303,10 @@ export default function Component() {
             {t.contactText}
           </p>
           <div className="flex flex-col md:flex-row space-x-0 md:space-x-4">
-            <a href="https://github.com/ReFraX32?tab=overview&from=2024-09-01&to=2024-09-01" className="hover:text-gray-300 flex items-center">
+            <a href="https://github.com/ReFraX32" className="hover:text-gray-300 flex items-center">
               <p className="mr-2">GitHub</p><Github />
             </a>
-            <a href="https://www.linkedin.com/in/franco-ruffin-040b70249/" className="hover:text-gray-300 flex items-center">
+            <a href="https://www.linkedin.com/in/franco-ramon-ruffin-berriel-040b70249/" className="hover:text-gray-300 flex items-center">
               <p className="mr-2">Linkedin</p><Linkedin />
             </a>
             <div className="hover:text-gray-300 flex items-center">
