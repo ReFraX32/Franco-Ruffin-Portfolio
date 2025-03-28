@@ -2,23 +2,25 @@ name: Update Last Updated Date
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   update-last-updated:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # Ensures the latest version is used
 
       - name: Create Last Updated File
         run: echo "$(date -u +'%Y-%m-%d %H:%M:%S UTC')" > last_updated.txt
 
       - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub's built-in token
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add last_updated.txt
-          git commit -m "Auto-update last_updated.txt" || echo "No changes to commit"
-          git push
+          git commit -m "Auto-update last_updated.txt" || exit 0  # Prevent error if no changes
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git HEAD:main
