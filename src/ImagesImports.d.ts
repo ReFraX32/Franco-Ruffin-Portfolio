@@ -2,6 +2,11 @@ declare const projectsImages: {
     project1Image: any;
     project2Image: any;
     project3Image: any;
+    project4Image: any;
+    project5Image: any;
+    project6Image: any;
+    project7Image: any;
+    project8Image: any;
 };
 declare const certificationsImages: {
     certification1Image: any;
@@ -28,5 +33,7 @@ declare const certificationsImages: {
     certification22Image: any;
     certification23Image: any;
     certification24Image: any;
+    certification25Image: any;
+    certification26Image: any;
 };
 export { projectsImages, certificationsImages };
